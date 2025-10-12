@@ -1,0 +1,164 @@
+/*
+  Global Stylesheet for the Midterm music/recording site.
+  This CSS defines a rustic colour palette and layout that
+  applies across all pages. A vertical navigation bar sits on
+  the left, while the main content flows beside it. Images
+  enlarge slightly when hovered, providing a subtle surprise
+  effect requested by the user.
+*/
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  /* Light parchment background for a rustic feel */
+  background-color: #f8f1e7;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  background-color: #3e2723;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* Vertical navigation bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 220px;
+  background-color: #5d4037;
+  padding-top: 1rem;
+  overflow-y: auto;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  margin: 0.5rem 0;
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #f5f0e6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #8d6e63;
+  color: #fff;
+}
+
+/* Main content area. Leaves room for the fixed nav */
+main {
+  margin-left: 240px;
+  padding: 2rem;
+}
+
+/* Section headings */
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #3e2723;
+  border-bottom: 2px solid #8d6e63;
+  padding-bottom: 0.25rem;
+}
+
+/* Give sections a soft background to break up the page and add colour */
+section {
+  background-color: #fff8f1;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+section p {
+  margin-bottom: 1rem;
+  max-width: 800px;
+}
+
+/* Image gallery styling */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery img {
+  width: calc(33.333% - 1rem);
+  height: auto;
+  border: 3px solid #8d6e63;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Projects list styling */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-item {
+  padding: 1rem;
+  border: 1px solid #d7ccc8;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.project-item h3 {
+  margin-bottom: 0.5rem;
+  color: #3e2723;
+}
+
+.project-item a {
+  color: #5d4037;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.project-item a:hover {
+  color: #8d6e63;
+}
+
+/* Footer styling */
+footer {
+  margin-left: 240px;
+  padding: 1rem;
+  background-color: #d7ccc8;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #3e2723;
+}
